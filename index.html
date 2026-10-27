@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sayedul Islam – UI/UX and Graphic Designer</title>
+<meta name="description" content="Portfolio of Sayedul Islam, a UI/UX and Graphic Designer crafting digital experiences and visual identities for international clients.">
+<meta property="og:title" content="Sayedul Islam – UI/UX and Graphic Designer">
+<meta property="og:description" content="Designing digital experiences with purpose.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="top-bar">
+ <div class="wrap nav">
+  <a class="logo" href="#top">Sayedul Islam</a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="links" aria-label="Open menu">Menu</button>
+  <nav class="links" id="links" aria-label="Main">
+   <a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+   <a class="btn" href="#contact">Let’s Talk</a>
+  </nav>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <h1 class="rise">Designing digital experiences with <span class="serif">purpose.</span></h1>
+   <p class="lead rise d1">I’m Sayedul Islam, a UI/UX and Graphic Designer passionate about crafting meaningful digital experiences and visual identities.</p>
+   <div class="cta-row rise d2"><a class="btn" href="#work">Explore My Work</a><a class="btn ghost" href="#contact">Let’s Work Together</a></div>
+  </div>
+  <div class="portrait rise d3"><div class="ph" data-img="portrait" data-label="Portrait photo · 4:5"></div></div>
+ </div>
+</section>
+
+<section id="work" style="padding-top:40px">
+ <div class="wrap">
+  <div class="work-head">
+   <h2>Selected work</h2>
+   <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+  </div>
+  <div class="grid" id="grid" aria-live="polite"></div>
+ </div>
+</section>
+
+<section id="services" class="services">
+ <div class="wrap">
+  <h2>What I can do for you</h2>
+  <div class="svc-list" id="svc-list"></div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="wrap about-grid">
+  <div class="ph" data-img="about" data-label="About photo · 3:4"></div>
+  <div>
+   <h2>About me</h2>
+   <p style="margin-top:28px;font-size:20px">I’m a UI/UX and Graphic Designer who is also learning web development, so what I design is shaped by how it will actually be built.</p>
+   <p class="mute">I believe good design starts with a clear question: who is this for, and what should they be able to do? I work from that question outward, testing ideas in Figma and refining until the interface feels obvious to use.</p>
+   <ul class="skills" id="skills"></ul>
+   <a class="btn ghost" id="cv" href="#contact">Download CV</a>
+  </div>
+ </div>
+</section>
+
+<section id="process" class="process">
+ <div class="wrap">
+  <h2>How I work</h2>
+  <ol class="steps">
+   <li><h3>Understand the brief</h3><p>We agree on the goal, the audience, and what success looks like before any pixels move.</p></li>
+   <li><h3>Research and explore</h3><p>I look at references and competitors, then sketch several directions instead of one.</p></li>
+   <li><h3>Design and refine</h3><p>The strongest direction becomes a full design, improved through your feedback.</p></li>
+   <li><h3>Deliver and improve</h3><p>You receive organised files, and I stay available for revisions after handoff.</p></li>
+  </ol>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap contact-grid">
+  <div>
+   <h2>Have a project in mind? Let’s make it happen.</h2>
+   <p class="mute" style="margin-top:24px">Tell me what you’re building. I’ll reply with questions or a next step.</p>
+   <p><a id="mail" href="#">Email</a></p>
+   <ul class="social" id="social"></ul>
+  </div>
+  <form id="form" novalidate>
+   <label>Name<input id="f-name" name="name" autocomplete="name" required><span class="err" data-for="f-name"></span></label>
+   <label>Email<input id="f-email" name="email" type="email" autocomplete="email" required><span class="err" data-for="f-email"></span></label>
+   <div class="two">
+    <label>Service<select id="f-service" name="service" required><option value="">Select a service</option></select><span class="err" data-for="f-service"></span></label>
+    <label>Budget (optional)<select id="f-budget" name="budget"><option value="">Not sure yet</option><option>Under $250</option><option>$250 – $1,000</option><option>$1,000 – $5,000</option><option>$5,000+</option></select></label>
+   </div>
+   <label>Project details<textarea id="f-msg" name="msg" rows="5" required></textarea><span class="err" data-for="f-msg"></span></label>
+   <button class="btn" type="submit">Send inquiry</button>
+   <div class="status" id="status" role="status" hidden></div>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap foot">
+  <span>© <span id="year"></span> Sayedul Islam</span>
+  <nav aria-label="Footer"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <a href="#top">Back to top</a>
+ </div>
+</footer>
+
+<button class="to-top" id="to-top" aria-label="Back to top">↑</button>
+
+<dialog id="dlg" aria-labelledby="d-title"><div class="d-in" id="d-in"></div></dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
