@@ -2,7 +2,7 @@
 const CONFIG = {
   email: "sayedulyt07@gmail.com",          // replace with your real email
   cv: "",                                   // URL of your CV file; empty = button jumps to contact
-  images: { portrait: "images/portrait.jpg", about: "images/portrait.jpg" },  // file paths or URLs; empty = placeholder
+  images: { portrait: "portrait.jpg", about: "images/portrait.jpg" },  // file paths or URLs; empty = placeholder
   social: [                                 // add real URLs; items with empty url are hidden
     {label:"Behance", url:""},{label:"Dribbble", url:""},{label:"LinkedIn", url:""},{label:"Fiverr", url:""}
   ],
