@@ -2,7 +2,7 @@
 const CONFIG = {
   email: "sayedulyt07@gmail.com",          // replace with your real email
   cv: "",                                   // URL of your CV file; empty = button jumps to contact
-  images: { portrait: "portrait.jpg", about: "images/portrait.jpg" },  // file paths or URLs; empty = placeholder
+  images: { portrait: "portrait.jpg", about: "portrait.jpg" },  // file paths or URLs; empty = placeholder
   social: [                                 // add real URLs; items with empty url are hidden
     {label:"Behance", url:""},{label:"Dribbble", url:""},{label:"LinkedIn", url:""},{label:"Fiverr", url:""}
   ],
@@ -15,7 +15,7 @@ const CONFIG = {
   ],
   /* cover/shots: image URLs or data: URIs. type: "Personal concept" | "Practice project" | "Client project" */
   projects: [
-    {id:"sample-fitness-app", title:"Fitness tracker app", cat:"UI/UX Design", type:"Personal concept", date:"2026", tools:["Figma"], url:"", cover:"images/portrait.jpg", shots:[],
+    {id:"sample-fitness-app", title:"Fitness tracker app", cat:"UI/UX Design", type:"Personal concept", date:"2026", tools:["Figma"], url:"", cover:"portrait.jpg", shots:[],
      desc:"Sample entry: a mobile app concept for planning workouts and tracking progress.",
      overview:"A concept exploring how a workout app can show progress without overwhelming the user.", problem:"Replace this with the problem you set out to solve.", role:"Replace with your role, for example UX research, UI design, prototyping.", process:"Replace with your steps: research, wireframes, visual design, testing.", outcome:"Replace with the real outcome. Do not add numbers you can’t prove."},
     {id:"sample-agency-site", title:"Studio website", cat:"Website Design", type:"Practice project", date:"2026", tools:["Figma","HTML","CSS"], url:"", cover:"", shots:[],
