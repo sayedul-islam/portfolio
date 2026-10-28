@@ -2,99 +2,145 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sayedul Islam – UI/UX and Graphic Designer</title>
-<meta name="description" content="Portfolio of Sayedul Islam, a UI/UX and Graphic Designer crafting digital experiences and visual identities for international clients.">
+<meta name="description" content="Sayedul Islam is a UI/UX and Graphic Designer creating clear digital experiences and visual identities for international clients.">
 <meta property="og:title" content="Sayedul Islam – UI/UX and Graphic Designer">
 <meta property="og:description" content="Designing digital experiences with purpose.">
+<meta property="og:image" content="images/portrait.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header id="top-bar">
+
+<header id="bar">
  <div class="wrap nav">
-  <a class="logo" href="#top">Sayedul Islam</a>
+  <a class="logo" href="#home" aria-label="Sayedul Islam, home"><span class="mono">S</span><span>Sayedul Islam</span></a>
   <button class="burger" id="burger" aria-expanded="false" aria-controls="links" aria-label="Open menu">Menu</button>
   <nav class="links" id="links" aria-label="Main">
-   <a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
-   <a class="btn" href="#contact">Let’s Talk</a>
+   <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact">Contact</a>
+   <a class="btn light sm" href="#contact">Hire Me</a>
   </nav>
  </div>
 </header>
 
-<main id="top">
-<section class="hero">
+<main>
+<!-- HERO -->
+<section id="home" class="hero">
+ <span class="orb o1" aria-hidden="true"></span><span class="orb o2" aria-hidden="true"></span>
  <div class="wrap hero-grid">
-  <div>
-   <h1 class="rise">Designing digital experiences with <span class="serif">purpose.</span></h1>
-   <p class="lead rise d1">I’m Sayedul Islam, a UI/UX and Graphic Designer passionate about crafting meaningful digital experiences and visual identities.</p>
-   <div class="cta-row rise d2"><a class="btn" href="#work">Explore My Work</a><a class="btn ghost" href="#contact">Let’s Work Together</a></div>
+  <div class="hero-text">
+   <p class="eyebrow rise">Hello, I’m</p>
+   <h1 class="rise d1">Sayedul <span class="serif">Islam</span></h1>
+   <p class="role rise d1">UI/UX and Graphic Designer</p>
+   <p class="lead rise d2">I design clear, usable interfaces and visual identities. I’m also learning web development, so what I design is shaped by how it gets built.</p>
+   <div class="cta rise d2">
+    <a class="btn light" href="#contact">Hire Me</a>
+    <a class="btn line" href="#projects">View My Work</a>
+    <a class="btn line" id="cv" href="#" hidden>Download CV</a>
+   </div>
+   <ul class="social rise d3" id="social" aria-label="Social links"></ul>
   </div>
-  <div class="portrait rise d3"><div class="ph" data-img="portrait" data-label="Portrait photo · 4:5"></div></div>
- </div>
-</section>
-
-<section id="work" style="padding-top:40px">
- <div class="wrap">
-  <div class="work-head">
-   <h2>Selected work</h2>
-   <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+  <div class="hero-art rise d2">
+   <div class="blob b1" aria-hidden="true"></div><div class="blob b2" aria-hidden="true"></div>
+   <svg class="spark s1" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
+   <svg class="spark s2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
+   <img class="cutout" src="images/sayedul-cutout.webp" alt="Portrait of Sayedul Islam" width="800" height="1000">
+   <p class="script" aria-hidden="true">Design<br>Build<br>Create
+    <svg viewBox="0 0 160 14" aria-hidden="true"><path d="M3 10C40 2 100 2 157 8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+   </p>
   </div>
-  <div class="grid" id="grid" aria-live="polite"></div>
  </div>
 </section>
 
-<section id="services" class="services">
- <div class="wrap">
-  <h2>What I can do for you</h2>
-  <div class="svc-list" id="svc-list"></div>
- </div>
-</section>
-
+<!-- ABOUT -->
 <section id="about">
  <div class="wrap about-grid">
-  <div class="ph" data-img="about" data-label="About photo · 3:4"></div>
-  <div>
-   <h2>About me</h2>
-   <p style="margin-top:28px;font-size:20px">I’m a UI/UX and Graphic Designer who is also learning web development, so what I design is shaped by how it will actually be built.</p>
-   <p class="mute">I believe good design starts with a clear question: who is this for, and what should they be able to do? I work from that question outward, testing ideas in Figma and refining until the interface feels obvious to use.</p>
-   <ul class="skills" id="skills"></ul>
-   <a class="btn ghost" id="cv" href="#contact">Download CV</a>
+  <div class="about-photo rv"><img src="images/portrait.webp" alt="Sayedul Islam" loading="lazy" width="960" height="1200"></div>
+  <div class="rv">
+   <h2>About <span class="serif">me</span></h2>
+   <p class="big">I’m a UI/UX and Graphic Designer who is also learning web development.</p>
+   <p class="mute">I believe good design starts with a clear question: who is this for, and what should they be able to do? I work outward from that question, testing ideas in Figma and refining until the interface feels obvious to use.</p>
+   <dl class="facts">
+    <div><dt>Name</dt><dd>Sayedul Islam</dd></div>
+    <div><dt>Work</dt><dd>Freelance designer and developer</dd></div>
+    <div><dt>Email</dt><dd><a id="about-mail" href="#contact">Get in touch</a></dd></div>
+   </dl>
   </div>
+  <ul class="pillars rv">
+   <li><span class="n serif">01</span><div><h3>Focus</h3><p>UI/UX design, Figma, graphic design and brand identity.</p></div></li>
+   <li><span class="n serif">02</span><div><h3>Career goal</h3><p>Working with international freelance clients on meaningful digital products.</p></div></li>
+   <li><span class="n serif">03</span><div><h3>Learning</h3><p>Illustrator, HTML, CSS and JavaScript, to finish and build what I design.</p></div></li>
+  </ul>
  </div>
 </section>
 
-<section id="process" class="process">
+<!-- SKILLS -->
+<section id="skills" class="tint">
+ <div class="wrap skills-grid">
+  <div class="rv">
+   <h2>My <span class="serif">skills</span></h2>
+   <p class="mute">The tools and disciplines I work with, from design to the first lines of code. Levels are my own honest self-assessment.</p>
+   <a class="btn dark" href="#projects">Explore My Projects</a>
+  </div>
+  <ul class="skill-list rv" id="skills-list"></ul>
+ </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
  <div class="wrap">
-  <h2>How I work</h2>
-  <ol class="steps">
-   <li><h3>Understand the brief</h3><p>We agree on the goal, the audience, and what success looks like before any pixels move.</p></li>
-   <li><h3>Research and explore</h3><p>I look at references and competitors, then sketch several directions instead of one.</p></li>
-   <li><h3>Design and refine</h3><p>The strongest direction becomes a full design, improved through your feedback.</p></li>
-   <li><h3>Deliver and improve</h3><p>You receive organised files, and I stay available for revisions after handoff.</p></li>
-  </ol>
+  <div class="head rv"><h2>My <span class="serif">projects</span></h2><p class="mute">A few concept and practice projects. Open any card for the details.</p></div>
+  <div class="proj-grid" id="proj-grid"></div>
  </div>
 </section>
 
-<section id="contact">
+<!-- EDUCATION & LEARNING -->
+<section id="education" class="tint">
+ <div class="wrap edu-grid">
+  <div class="rv"><h2 class="sm">Education</h2><ol class="tl" id="edu"></ol></div>
+  <div class="rv"><h2 class="sm">Learning</h2><ol class="tl" id="learn"></ol></div>
+  <aside class="quote rv"><p class="serif">Good design starts with a clear question: who is this for?</p></aside>
+ </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+ <div class="wrap">
+  <div class="head rv"><h2>How I <span class="serif">work</span></h2></div>
+  <ol class="steps rv" id="steps"></ol>
+ </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="tint">
+ <div class="wrap">
+  <div class="head rv"><h2>My <span class="serif">services</span></h2><p class="mute">Design work focused on clarity and the value it gives your business.</p></div>
+  <div class="svc-grid" id="svc-grid"></div>
+ </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+ <span class="orb o3" aria-hidden="true"></span>
  <div class="wrap contact-grid">
-  <div>
-   <h2>Have a project in mind? Let’s make it happen.</h2>
-   <p class="mute" style="margin-top:24px">Tell me what you’re building. I’ll reply with questions or a next step.</p>
-   <p><a id="mail" href="#">Email</a></p>
-   <ul class="social" id="social"></ul>
+  <div class="rv">
+   <h2>Get in <span class="serif">touch</span></h2>
+   <p class="lead">Have a project in mind? Tell me what you’re building and I’ll reply with questions or a next step.</p>
+   <p class="mail-row" id="mail-row" hidden>Email <a id="mail" href="#"></a></p>
+   <ul class="social" id="social2" aria-label="Social links"></ul>
+   <p class="script2 serif" aria-hidden="true">Let’s work together.</p>
   </div>
-  <form id="form" novalidate>
-   <label>Name<input id="f-name" name="name" autocomplete="name" required><span class="err" data-for="f-name"></span></label>
-   <label>Email<input id="f-email" name="email" type="email" autocomplete="email" required><span class="err" data-for="f-email"></span></label>
+  <form id="form" class="rv" novalidate>
    <div class="two">
-    <label>Service<select id="f-service" name="service" required><option value="">Select a service</option></select><span class="err" data-for="f-service"></span></label>
-    <label>Budget (optional)<select id="f-budget" name="budget"><option value="">Not sure yet</option><option>Under $250</option><option>$250 – $1,000</option><option>$1,000 – $5,000</option><option>$5,000+</option></select></label>
+    <label>Your name<input id="f-name" autocomplete="name" placeholder="Your name"><span class="err" data-for="f-name"></span></label>
+    <label>Your email<input id="f-email" type="email" autocomplete="email" placeholder="you@example.com"><span class="err" data-for="f-email"></span></label>
    </div>
-   <label>Project details<textarea id="f-msg" name="msg" rows="5" required></textarea><span class="err" data-for="f-msg"></span></label>
-   <button class="btn" type="submit">Send inquiry</button>
+   <label>Service<select id="f-service"><option value="">Select a service</option></select><span class="err" data-for="f-service"></span></label>
+   <label>Message<textarea id="f-msg" rows="5" placeholder="Tell me about your project"></textarea><span class="err" data-for="f-msg"></span></label>
+   <button class="btn light" type="submit" id="send">Send message</button>
    <div class="status" id="status" role="status" hidden></div>
   </form>
  </div>
@@ -103,14 +149,13 @@
 
 <footer>
  <div class="wrap foot">
+  <a class="logo" href="#home"><span class="mono">S</span><span>Sayedul Islam</span></a>
+  <nav aria-label="Footer"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
   <span>© <span id="year"></span> Sayedul Islam</span>
-  <nav aria-label="Footer"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
-  <a href="#top">Back to top</a>
  </div>
 </footer>
 
 <button class="to-top" id="to-top" aria-label="Back to top">↑</button>
-
 <dialog id="dlg" aria-labelledby="d-title"><div class="d-in" id="d-in"></div></dialog>
 
 <script src="script.js"></script>
