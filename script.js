@@ -21,7 +21,7 @@ const CONFIG = {
     {id:"sample-agency-site", title:"Studio website", cat:"Website Design", type:"Practice project", date:"2026", tools:["Figma","HTML","CSS"], url:"", cover:"", shots:[],
      desc:"Sample entry: a landing page layout for a small creative studio.",
      overview:"A practice website design focused on typography and clear calls to action.", problem:"Replace this with the objective.", role:"Replace with your role.", process:"Replace with your process.", outcome:"Replace with the final outcome."},
-    {id:"sample-cafe-brand", title:"Café brand identity", cat:"Branding", type:"Personal concept", date:"2026", tools:["Photoshop","Figma"], url:"", cover:"", shots:[],
+    {id:"sample-cafe-brand", title:"Café brand identity", cat:"Branding", type:"Personal concept", date:"2026", tools:["Photoshop","Figma"], url:"", cover:"cap.jpg", shots:[],
      desc:"Sample entry: logo, colours and packaging for a fictional café.",
      overview:"A fictional brand created to practise logo design and building a colour and type system.", problem:"Replace this with the objective.", role:"Replace with your role.", process:"Replace with your process.", outcome:"Replace with the final outcome."},
     {id:"sample-poster-set", title:"Event poster series", cat:"Graphic Design", type:"Practice project", date:"2026", tools:["Photoshop"], url:"", cover:"logo.jpg", shots:[],
